@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input, button, select {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Manager</h1>
+    <p>This tool is under construction. For full functionality, you'll need to run a Python server.</p>
+    <form id="fileForm">
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" required>
+        <select id="action">
+            <option value="sort_excel">Sort Excel</option>
+            <option value="correct_docx">Correct Docx</option>
+            <option value="organize_files">Organize Files</option>
+        </select>
+        <button type="button" onclick="alert('Processing files requires a local Python server!')">Process</button>
+    </form>
+</body>
+</html>
